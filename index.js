@@ -26,22 +26,23 @@ fs.readdir('./events', (err, files) => {
   let jsFiles = files.filter(file => file.split('.').pop() === 'js');
   jsFiles.forEach(file => {
     const prop = require(`./events/${file}`);
+    console.log(file);
     client.on(prop.help.event, prop);
+    
   });
 });
 
 
 
-bot.on('ready', () => {
-  console.info(`Logged in as ${bot.user.tag}!`);
-  client.channels.cache.get(process.env.GUILD_INIT).send(process.env.GUILD_INIT_MSG)
+client.on('ready', () => {
+  console.info(`Logged in as ${client.user.tag}!`);
 });
 
-bot.login(TOKEN);
+client.login(TOKEN);
 
 
 
-// bot.on('message', msg => {
+// client.on('message', msg => {
 //   if (msg.content === 'kindi') {
 //     msg.reply('yo enn kindi 🎃');
 //     msg.channel.send('dear kindi 🎃');
