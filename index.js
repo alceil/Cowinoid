@@ -2,6 +2,7 @@ const fs = require('fs');
 require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const mongo = require('./mongo')
 client.commands = new Discord.Collection();
 const TOKEN = process.env.TOKEN;
 
@@ -34,8 +35,16 @@ fs.readdir('./events', (err, files) => {
 
 
 
-client.on('ready', () => {
+client.on('ready',async () => {
   console.info(`Logged in as ${client.user.tag}!`);
+
+  await mongo().then((mongoose) => {
+    try {
+      console.log('Connected to mongo!')
+    } finally {
+      mongoose.connection.close()
+    }
+  })
 });
 
 client.login(TOKEN);
