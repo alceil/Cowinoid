@@ -6,6 +6,7 @@ module.exports = {
 	description: 'Start test',
 	execute(message) {
         var age;
+        var district_id;
         async function getData(message) {
             await message.channel.send("```Welcome to CoWin WhatsApp ChatBot!\nSelect your Age Group to Proceed...\nSend 1   : to Select Age Group 18 - 44\nSend 2   : to Select Age Group 45+\nSend END : to Cancel All and End Current Chat Session```");
             await message.channel
@@ -32,9 +33,17 @@ module.exports = {
                   }
                   )
                   .then(async (collected) => {
-                    title = collected.first().content;
-                    console.log(title)
-                    axios.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=307&date=21-05-2021',{
+                    id = collected.first().content;
+                    district_id = id
+                    console.log(id)
+                    let date_ob = new Date();
+                    let date = ("0" + date_ob.getDate()).slice(-2);
+                    let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+                    let year = date_ob.getFullYear();
+                    var formattedDate = date + "-" + month + "-" + year;
+                    console.log(formattedDate);
+                    var url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=" + district_id +"&date=" + formattedDate;
+                    axios.get(url,{
                       headers: {
                         'User-Agent':
                           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
@@ -42,13 +51,13 @@ module.exports = {
                     },
                     )
                             .then((res) => {
-                            //  console.log('RES:', res.data['sessions'])
+                            //  console.log('RES:', res.data)
                              var list = res.data['sessions'];
-                             //console.log(list);
-
-                             const hospList = list.map(hosp=>`Hosp Name:${hosp.name}\nFee:${hosp.fee}`)
+                             const hospListWithAge = list.filter(hosp=>hosp.min_age_limit===age);  
+                             const hospList = hospListWithAge.map(hosp=>`\nHosp Name:${hosp.name}\nFee:${hosp.fee}\n`);
+                             hospList.push('List of Hospitals Where vacines are available');
                              console.log(hospList);
-                             var indeded ="```" + hospList.join('/n') +"```"
+                             var indeded ="```" + hospList.join(' ') +"```"
                              message.channel.send(indeded);
                              sessions.push(list);
                              console.log(sessions)            
