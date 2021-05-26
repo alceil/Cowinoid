@@ -81,7 +81,7 @@ npm index.js
  
  <br><br>
 
-<h1 id="library">Libraries used</h1>
+<h1 id="frameworks">Frameworks used</h1>
 
 1. Node.js 
 2. MongoDB 
