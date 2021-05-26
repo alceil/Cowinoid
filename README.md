@@ -70,11 +70,11 @@ npm index.js
 <h1 id="library">Libraries used</h1>
  
 ```
- Discord.js,
- dotenv ,
- axios ,
- mongoose, 
- node-cron, 
+ Discord.js
+ dotenv 
+ axios 
+ mongoose
+ node-cron
  date-and-time 
 ```
  
