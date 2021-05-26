@@ -68,12 +68,12 @@ npm index.js
 <br><br>
 
 <h1 id="library">Libraries used</h1>
-1. Discord.js
-2. dotenv 
-3. axios 
-4. mongoose 
-5. node-cron 
-6. date-and-time
+` Discord.js,
+ dotenv ,
+ axios ,
+ mongoose, 
+ node-cron, 
+ date-and-time `
  
  
  
