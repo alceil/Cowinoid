@@ -1,30 +1,94 @@
-# How to Build Your First Discord Bot with Node.js
+# Cowinoid
 
-Michiel Mulders shows you how to install and set up a new Discord bot, which is made easier thanks to the API offered by the Discord.js package.
+<p align="center"><img src="https://trello-attachments.s3.amazonaws.com/542e9c6316504d5797afbfb9/542e9c6316504d5797afbfc1/39dee8d993841943b5723510ce663233/Frame_19.png" width="100%"></p>
 
-Link to article on SitePoint: [https://www.sitepoint.com/discord-bot-node-js/](https://www.sitepoint.com/discord-bot-node-js/)
 
-## Requirements
 
-- [Node.js](http://nodejs.org/)
-- [Discord](https://discordapp.com/) account
+<div align="center"><img src="https://github.com/alceil/images/blob/main/COVINOID.png?raw=true"  width="500em" ></div>
 
-## Installation Steps (if applicable)
+<h1 align="center">Cowinoid Discord Bot</h1>
 
-1. Clone repo
-2. Run `npm install`
-3. Add Discord credentials in a `.env` file
-3. Run `node index.js`
-4. Interact with your Discord bot via your web browser
+<p align="center">Hey!👋🏻 I'm Cowinoid, a discord bot. I can help you check the availability Covid-19 vaccination slots anywhere in Kerala and notify you when slots are available. I was created as a part of TinkerHub Build From Home 2021.</p>
+<br>
+<h3 align="center"><a href="">Add me to your server</a>
 
-## License
+<br>
 
-SitePoint's code archives and code examples are licensed under the MIT license.
 
-Copyright © 2020 SitePoint
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+<br><br>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ <a href="">Click here to know how the bot works (Video)</a>
+
+
+
+<br><br>
+
+ <h1>Here's how I can help you🤖</h1>
+ 
+ <ul>
+  <li>Add the discord bot to your server</li>
+  <li>List the available districts</li>
+  <li>Enter your district and age</li>
+  <li>Modify the saved data</li>
+  <li>Check the availability of slots based on the data provided</li>
+  <li>Receive hourly notifications on open slots</li>
+  <li>Unsubscribe from the notifications</li>
+ </ul>
+
+
+<br><br>
+<h1 id="configure">How to Configure Project?</h1>
+
+1. Clone Project
+```
+git clone 
+```
+2. Change directory to VacBot
+```
+cd VacBot
+```
+3. Install libraries
+```
+npm install
+```
+4. Create file <code>.env</code> and add the line
+```
+BOT_TOKEN=enter_your_bot_token
+MONGO_DBNAME=enter_mongoDB_name
+MONGO_USERNAME=enter_your_mongoDB_Username
+MONGO_PASSWORD=enter_your_bot_mongoDB_Password
+MONGO_CLUSTER=enter_your_mongoDB_Cluster
+```
+5. Run project
+```
+npm start
+```
+
+
+<br><br>
+
+<h1 id="library">Libraries used</h1>
+
+1. Discord.js : To make our NodeJS Bot for Discord<br>
+2. dotenv : To set environmental Variable<br>
+3. https : To send API requests<br>
+4. MongoDB : Used as Database<br>
+5. scheduler : To schedule daily updates
+
+<br><br>
+
+<h1 id="team">Team Cowinoid</h1>
+ 
+ <ol>
+  <li><a href="https://github.com/alceil">Ashish Tom</a></li>
+  <li><a href="https://github.com/janetseb">Janet S</a></li>
+  <li><a href="https://github.com/thusharkiransd">Thushar Kiran</a></li>
+ </ol>
+ 
+ <h1 id="teamid">Team Id</h1>
+ 
+ BFH/recG2hXWYRGEgMzRC/2021
+ 
