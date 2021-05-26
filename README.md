@@ -64,33 +64,24 @@ MONGODB_URI=<YOUR MONGO DB URI>
 ```
 npm index.js
 ```
-
-
+ 
 <br><br>
 
 <h1 id="library">Libraries used</h1>
-
 1. Discord.js 
 2. dotenv 
 3. axios 
 4. mongoose 
 5. node-cron 
 6. date-and-time
-
 <br><br>
- 
  <br><br>
 
 <h1 id="frameworks">Frameworks used</h1>
 
 1. Node.js 
 2. MongoDB 
-
-
 <br><br>
- 
- 
-
 <h1 id="team">Team Cowinoid</h1>
  
  <ol>
