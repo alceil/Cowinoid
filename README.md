@@ -68,9 +68,9 @@ npm index.js
 <br><br>
 
 <h1 id="library">Libraries used</h1>
-1. Discord.js 
-2. dotenv 
-3. axios 
+1. Discord.js\n 
+2. dotenv \n
+3. axios \n
 4. mongoose 
 5. node-cron 
 6. date-and-time
