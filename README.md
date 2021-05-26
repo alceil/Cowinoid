@@ -10,7 +10,7 @@
 
 <p align="center">Hey!👋🏻 I'm Cowinoid, a discord bot. I can help you check the availability Covid-19 vaccination slots anywhere in Kerala and notify you when slots are available. I was created as a part of TinkerHub Build From Home 2021.</p>
 <br>
-<h3 align="center"><a href="">Add me to your server</a>
+<h3 align="center"><a href="https://discord.com/api/oauth2/authorize?client_id=846651944177106964&permissions=67584&scope=bot">Add me to your server</a>
 
 <br>
 
@@ -20,7 +20,7 @@
 <br><br>
 
 
- <a href="">Click here to know how the bot works (Video)</a>
+ <a href="https://www.loom.com/share/b22cbc5c6d5e4e0ea14fafb8646fc5d3">Click here to know how the bot works (Video)</a>
 
 
 
@@ -48,7 +48,7 @@ git clone
 ```
 2. Change directory to VacBot
 ```
-cd VacBot
+cd Cowinoid
 ```
 3. Install libraries
 ```
@@ -56,15 +56,14 @@ npm install
 ```
 4. Create file <code>.env</code> and add the line
 ```
-BOT_TOKEN=enter_your_bot_token
-MONGO_DBNAME=enter_mongoDB_name
-MONGO_USERNAME=enter_your_mongoDB_Username
-MONGO_PASSWORD=enter_your_bot_mongoDB_Password
-MONGO_CLUSTER=enter_your_mongoDB_Cluster
+TOKEN=<YOUR DISCORD TOKEN HERE>
+PREFIX=<YOUR PREFIX SYMBOL HERE>
+GUILD_INIT=<DISCORD CHANNEL ID>
+MONGODB_URI=<YOUR MONGO DB URI>
 ```
 5. Run project
 ```
-npm start
+npm index.js
 ```
 
 
@@ -72,13 +71,26 @@ npm start
 
 <h1 id="library">Libraries used</h1>
 
-1. Discord.js : To make our NodeJS Bot for Discord<br>
-2. dotenv : To set environmental Variable<br>
-3. https : To send API requests<br>
-4. MongoDB : Used as Database<br>
-5. scheduler : To schedule daily updates
+1. Discord.js 
+2. dotenv 
+3. axios 
+4. mongoose 
+5. node-cron 
+6. date-and-time
 
 <br><br>
+ 
+ <br><br>
+
+<h1 id="library">Libraries used</h1>
+
+1. Node.js 
+2. MongoDB 
+
+
+<br><br>
+ 
+ 
 
 <h1 id="team">Team Cowinoid</h1>
  
